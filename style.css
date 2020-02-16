@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.content {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #a9e7ff;
+}
+
+.menu {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 1100px;
+}
+
+.box_1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaf0fc;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+.info_footer {
+  margin-top: 3px;
+  border-bottom: 1px solid #d2d2d2;
+  height: 28px;
+}
+.info_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 0 20px;
+}
+
+.info_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_title .number {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.essence > div {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+}
+
+.cost .price {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.cost .currency {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  margin: 32px 0 0 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #95b5cd;
+}
+
+.icon > img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.address {
+  margin: 30px 15px 0 15px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.shipping_address {
+  font-size: 16px;
+  margin: 0 0 7px 9px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #95b5cd;
+}
+
+.table .box1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.table .box1 div:first-child {
+  color: #a9a9a9;
+  margin-right: 8px;
+}
+.reference_data {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.items {
+  border-bottom: 1px solid #d2d2d2;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+.prim_block {
+  background-color: white;
+}
+.press_right {
+  text-align: right;
+}
+td {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+footer {
+  z-index: 100;
+  background-color: #025666;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.footer > img {
+  width: 16px;
+  height: 16px;
+}
+
+.box_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  min-width: 250px;
+  background-color: white;
+}
+.listing {
+  width: 100%;
+}
+
+.listing_header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.listing_header .text {
+  margin-top: 3px;
+  width: 100%;
+  text-align: center;
+}
+.listing_header_img img {
+  width: 26px;
+  height: 26px;
+}
+
+.forma {
+  display: flex;
+  margin-left: 4px;
+  margin-right: 3px;
+}
+
+form {
+  width: max-content;
+  border: 1px solid #000; /* Параметры рамки */
+  width: 100%;
+  display: flex;
+}
+
+input[type="search"] {
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+  vertical-align: middle; /* Выравнивание по середине */
+  width: 100%;
+}
+input[type="image"] {
+  width: 20px; /* Ширина кнопки */
+  height: 20px; /* Высота кнопки */
+  border: none; /* Убираем рамку */
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: calc(697px - 13.4px);
+}
+
+.list_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 10px 20px 10px;
+}
+
+.description > div {
+  margin-bottom: 10px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time > div {
+  margin-bottom: 10px;
+}
+
+.condition {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 666px) {
+  .box_2 {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: start;
+    font-size: 26px;
+  }
+}
