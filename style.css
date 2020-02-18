@@ -219,22 +219,22 @@ footer {
 
 form {
   width: max-content;
-  border: 1px solid #000; /* Параметры рамки */
+  border: 1px solid #000;
   width: 100%;
   display: flex;
 }
 
 input[type="search"] {
-  border: none; /* Убираем рамку */
-  outline: none; /* Убираем свечение в Chrome и Safari */
-  -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
-  vertical-align: middle; /* Выравнивание по середине */
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
   width: 100%;
 }
 input[type="image"] {
-  width: 20px; /* Ширина кнопки */
-  height: 20px; /* Высота кнопки */
-  border: none; /* Убираем рамку */
+  width: 20px;
+  height: 20px;
+  border: none;
 }
 
 .list {
