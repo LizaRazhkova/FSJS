@@ -16,6 +16,10 @@ body {
   background-color: #a9e7ff;
 }
 
+img {
+  cursor: pointer;
+}
+
 .menu {
   display: none;
 }
@@ -43,11 +47,15 @@ body {
 header {
   width: 100%;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 .info_footer {
-  margin-top: 3px;
+  margin-top: 14px;
   border-bottom: 1px solid #d2d2d2;
   height: 28px;
+  position: sticky;
+  top: 0;
 }
 .info_description {
   display: flex;
@@ -65,6 +73,9 @@ header {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .essence > div {
@@ -139,7 +150,7 @@ header {
 
 .items {
   border-bottom: 1px solid #d2d2d2;
-  margin-top: 15px;
+  margin: 15px 0 0 15px;
   padding-bottom: 10px;
 }
 
@@ -155,6 +166,7 @@ table {
 }
 td {
   border-bottom: 1px solid #d2d2d2;
+  padding: 0 15px;
 }
 
 footer {
@@ -203,8 +215,6 @@ footer {
 
 .forma {
   display: flex;
-  margin-left: 4px;
-  margin-right: 3px;
 }
 
 form {
@@ -232,18 +242,34 @@ input[type="image"] {
   flex-direction: column;
   overflow: scroll;
   overflow-x: hidden;
-  max-height: calc(697px - 13.4px);
+  max-height: calc(697px - 2.4px);
 }
 
 .list_content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 10px 20px 10px;
+  margin: 10px 0px 20px 0px;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+.time {
+  margin-right: 10px;
+}
+
+.list_content:hover {
+  background: #f1f1f1;
 }
 
 .description > div {
   margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 153px;
 }
 
 .time {
@@ -253,6 +279,18 @@ input[type="image"] {
 
 .time > div {
   margin-bottom: 10px;
+}
+
+.in_time {
+  color: #42d742;
+}
+
+.urgent {
+  color: orange;
+}
+
+.too_late {
+  color: red;
 }
 
 .condition {
@@ -268,5 +306,15 @@ input[type="image"] {
     display: flex;
     justify-content: start;
     font-size: 26px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  }
+  .box_1 {
+    z-index: 0;
+  }
+  header {
+    display: fixed;
+    z-index: 2;
   }
 }
