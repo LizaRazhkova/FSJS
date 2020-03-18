@@ -7,7 +7,6 @@ html,
 body,
 .content-website {
   margin: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -119,14 +118,29 @@ img {
   background-color: #eaf0fc;
   display: flex;
   flex-direction: row;
-  padding-bottom: 10px;
   border-bottom: 3px solid #95b5cd;
 }
 
+.icon-active {
+  border-bottom: 3px solid blue;
+}
+
 .icon > img {
+  box-sizing: content-box;
+  position: relative;
+  padding-bottom: 10px;
+  bottom: -3px;
   width: 45px;
   height: 45px;
   margin: 32px 20px 0 20px;
+}
+
+.order_info_wrapper {
+  display: none;
+}
+
+.active_order_info_wrapper {
+  display: block;
 }
 
 .address {
@@ -241,7 +255,11 @@ form {
   display: flex;
 }
 
-input[type="search"] {
+.search_table {
+  width: 250px;
+}
+
+input[type="text"] {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -259,15 +277,12 @@ input[type="image"] {
 .order-list {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
-  overflow-x: hidden;
-  max-height: 698px;
 }
 .order-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 0px 20px 0px;
+  padding: 10px 0px 19px 0px;
   cursor: pointer;
 }
 
@@ -285,6 +300,11 @@ input[type="image"] {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 153px;
+}
+
+.departure {
+  display: flex;
+  flex-direction: row;
 }
 
 .time-arrive {
@@ -327,11 +347,22 @@ input[type="image"] {
   flex-direction: row;
   justify-content: flex-end;
   background-color: #025666;
+  position: fixed;
+  bottom: 0;
+  width: 280px;
 }
 
 .footer > img {
   width: 16px;
   height: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
 }
 
 /* adaptation */

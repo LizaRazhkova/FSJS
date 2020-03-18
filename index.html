@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order</title>
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./JS/index.js"></script>
   </head>
   <body>
     <div class="content-website">
@@ -16,54 +17,117 @@
           </header>
           <div class="info_description">
             <div class="info_title">
-              <div class="number">Order 7918</div>
+              <div class="number"></div>
               <div class="essence">
-                <div>Customer:Tor Restaurante</div>
-                <div>Ordered: 18 сент. 2016г.</div>
-                <div>Shipped: 26 сент. 2016г.</div>
+                <div class="customer">
+                  Customer:
+                  <span class="customer_data"></span>
+                </div>
+                <div class="ordered">
+                  Ordered:
+                  <span class="ordered_data"></span>
+                </div>
+                <div class="shipped">
+                  Shipped:
+                  <span class="shipped_data"></span>
+                </div>
               </div>
             </div>
             <div class="cost">
-              <div class="price">150935,13</div>
-              <div class="currency">EUR</div>
+              <div class="price"></div>
+              <div class="currency"></div>
             </div>
           </div>
           <div class="icon">
-            <img src="./img/car.png" alt="" />
-            <img src="./img/human.png" alt="" />
+            <img src="./img/car2.png" class="icon-active" alt="" id="car" />
+            <img src="./img/human1.png" alt="" id="human" />
           </div>
-          <div class="address">
-            <div class="shipping_address">Shipping Address</div>
+          <div
+            class="shipping_address_wrapper 
+            order_info_wrapper active_order_info_wrapper"
+          >
+            <div class="address">
+              <div class="shipping_address">Shipping Address</div>
+            </div>
+            <div class="profile">
+              <div class="name box1">
+                <div class="name__title">Name:</div>
+                <div class="name__value"></div>
+              </div>
+
+              <div class="street box1">
+                <div class="street__title">Street:</div>
+                <div class="street__value"></div>
+              </div>
+
+              <div class="zip_code box1">
+                <div class="zip_code__title">ZIP Code/City:</div>
+                <div class="zip_code__value"></div>
+              </div>
+
+              <div class="region box1">
+                <div class="region__title">Region:</div>
+                <div class="region__value"></div>
+              </div>
+
+              <div class="country box1">
+                <div class="country__title">Country:</div>
+                <div class="country__value"></div>
+              </div>
+            </div>
           </div>
-          <div class="profile">
-            <div class="name box1">
-              <div>Name:</div>
-              <div>ExcellentParcel</div>
+          <div class="customer_info_wrapper order_info_wrapper">
+            <div class="address">
+              <div class="shipping_address">Customer Info</div>
             </div>
+            <div class="profile">
+              <div class="first_name box1">
+                <div class="first_name__title">First name:</div>
+                <div class="first_name__value"></div>
+              </div>
 
-            <div class="street box1">
-              <div>Street:</div>
-              <div>Tottenhem Count Road</div>
-            </div>
+              <div class="last_name box1">
+                <div class="last_name__title">Last name:</div>
+                <div class="last_name__value"></div>
+              </div>
 
-            <div class="zip_code box1">
-              <div>ZIP Code/City:</div>
-              <div>N170AA London</div>
-            </div>
+              <div class="address_field box1">
+                <div class="address__title">Address:</div>
+                <div class="address__value"></div>
+              </div>
 
-            <div class="region box1">
-              <div>Region:</div>
-              <div>Greater London</div>
-            </div>
+              <div class="phone box1">
+                <div class="phone__title">Phone:</div>
+                <div class="phone__value"></div>
+              </div>
 
-            <div class="country box1">
-              <div>Country:</div>
-              <div>United Kingdom</div>
+              <div class="email box1">
+                <div class="email__title">Email:</div>
+                <div class="email__value"></div>
+              </div>
             </div>
           </div>
           <div class="reference_data">
-            <div class="items block">Line Items(4)</div>
-            <table>
+            <div class="items block">
+              <div>Line Items(4)</div>
+              <div class="forma search_table">
+                <form action="" method="get">
+                  <input
+                    name="s"
+                    id="mysearch_table"
+                    placeholder="Поиск"
+                    type="text"
+                  />
+                  <input type="image" id="search_icon" src="./img/loupe.png" />
+                  <input
+                    type="image"
+                    id="updata_table"
+                    src="./img/strelOchka.png"
+                  />
+                </form>
+              </div>
+            </div>
+            <table class="order_table">
               <tr>
                 <td>Product</td>
                 <td>Unit Price</td>
@@ -72,72 +136,10 @@
                 </td>
                 <td class="press_right">Total</td>
               </tr>
-              <tr class="prim_block">
-                <td class="table_row">
-                  <b>Anissed Syrup</b><br /><span>1412</span>
-                </td>
-                <td><b>65.89</b>EUR</td>
-                <td class="press_right">899</td>
-                <td class="press_right"><b>59 235,11</b>EUR</td>
-              </tr>
-              <tr class="prim_block">
-                <td class="table_row">
-                  <b>Anissed Syrup</b><br /><span>1412</span>
-                </td>
-                <td><b>65.89</b>EUR</td>
-                <td class="press_right">899</td>
-                <td class="press_right"><b>59 235,11</b>EUR</td>
-              </tr>
-              <tr class="prim_block">
-                <td class="table_row">
-                  <b>Anissed Syrup</b><br /><span>1412</span>
-                </td>
-                <td><b>65.89</b>EUR</td>
-                <td class="press_right">899</td>
-                <td class="press_right"><b>59 235,11</b>EUR</td>
-              </tr>
-              <tr class="prim_block">
-                <td class="table_row">
-                  <b>Anissed Syrup</b><br /><span>1412</span>
-                </td>
-                <td><b>65.89</b>EUR</td>
-                <td class="press_right">899</td>
-                <td class="press_right"><b>59 235,11</b>EUR</td>
-              </tr>
             </table>
 
             <div class="full-order">
               <div class="full_product">Product</div>
-              <div class="full-product-info">
-                <div><b>Anissed Syrup</b></div>
-                <div>1412</div>
-                <div>Unit Price:</div>
-                <div><b>65.89</b>EUR</div>
-                <div>Quantity:</div>
-                <div>899</div>
-                <div>Total:</div>
-                <div><b>59 235,11</b>EUR</div>
-              </div>
-              <div class="full-product-info">
-                <div><b>Anissed Syrup</b></div>
-                <div>1412</div>
-                <div>Unit Price:</div>
-                <div><b>65.89</b>EUR</div>
-                <div>Quantity:</div>
-                <div>899</div>
-                <div>Total:</div>
-                <div><b>59 235,11</b>EUR</div>
-              </div>
-              <div class="full-product-info">
-                <div><b>Anissed Syrup</b></div>
-                <div>1412</div>
-                <div>Unit Price:</div>
-                <div><b>65.89</b>EUR</div>
-                <div>Quantity:</div>
-                <div>899</div>
-                <div>Total:</div>
-                <div><b>59 235,11</b>EUR</div>
-              </div>
             </div>
           </div>
           <footer class="footer1">
@@ -147,7 +149,7 @@
         <div class="box_2">
           <header class="header">
             <div class="listing_header">
-              <div class="text">Order(10)</div>
+              <div class="text">Order(2)</div>
               <div class="listing_header_img">
                 <img src="./img/strelka.png" alt="" />
               </div>
@@ -155,111 +157,12 @@
           </header>
           <div class="forma">
             <form action="" method="get">
-              <input name="s" placeholder="Поиск" type="search" />
-              <input type="image" src="./img/loupe.png" />
-              <input type="image" src="./img/strelOchka.png" />
+              <input name="s" id="mysearch" placeholder="Поиск" type="text" />
+              <input type="image" id="search" src="./img/loupe.png" />
+              <input type="image" id="updata" src="./img/strelOchka.png" />
             </form>
           </div>
-          <div class="order-list">
-            <label class="switchable">
-              <input type="radio" name="swith" value="1" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition in_time">In time</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="2" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition urgent">Urgent</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="3" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition in_time">In time</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="4" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition in_time">In time</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="5" />
-              <div class="order-content" id="5">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition too_late">Too late</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="6" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition in_time">In time</div>
-                </div>
-              </div>
-            </label>
-            <label class="switchable">
-              <input type="radio" name="swith" value="7" />
-              <div class="order-content">
-                <div class="description">
-                  <div class="order-number">Order 7991</div>
-                  <div class="order_name">Bergunds snabbker</div>
-                  <div class="departure">Shipped: 25 нояб. 2016</div>
-                </div>
-                <div class="time-arrive">
-                  <div class="data">21.11.2016</div>
-                  <div class="condition urgent">Urgent</div>
-                </div>
-              </div>
-            </label>
-          </div>
+          <div class="order-list"></div>
           <footer class="footer">
             <img src="./img/icon1.png" alt="" />
             <img src="./img/icon2.png" alt="" />
